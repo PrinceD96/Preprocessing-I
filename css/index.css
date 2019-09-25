@@ -86,7 +86,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -133,4 +133,69 @@ table {
 html,
 body {
   height: 100%;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 80%;
+  max-width: 800px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+.container .profile {
+  border: 2px solid black;
+  width: 33.3%;
+  height: 100%;
+  background-color: orange;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.container .profile .profile-pic {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.container .profile .text-content {
+  border: 1px solid black;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
+.container .main {
+  background: #4d4b47;
+  width: 66.7%;
+}
+.container .main a {
+  color: orange;
+}
+.container .main h1,
+.container .main h2,
+.container .main h3,
+.container .main p {
+  color: lightgrey;
+}
+.container .main header nav {
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .main .name {
+  text-align: center;
+}
+.container .main .main-content {
+  padding: 10px;
+  display: flex;
+  flex-flow: column wrap;
+}
+footer {
+  width: 80%;
+  max-width: 800px;
+  margin: 5px auto;
+  text-align: center;
 }
