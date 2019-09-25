@@ -143,13 +143,14 @@ a {
   text-decoration: none;
 }
 
+// Variables
 @link-color: orange;
 @font-size: 2rem;
 @font-color: lightgrey;
 
 .container {
-  // border: 1px solid green;
-  width: 80%;
+  // border: 3px solid green;
+  width: 80vw;
   max-width: 800px;
   height: 100vh;
   margin: 0 auto;
@@ -157,7 +158,8 @@ a {
   flex-flow: row wrap;
 
   .profile {
-    border: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
     width: 33.3%;
     height: 100%;
     background-color: orange;
@@ -178,42 +180,53 @@ a {
       flex-flow: column wrap;
       justify-content: space-around;
 
+      h1 {
+        font-size: @font-size;
+      }
     }
+  }
 
   .main {
-    // border: 1px solid blue;
+    // border: 3px solid blue;
     background: #4d4b47;
     width: 66.7%;
+    height: 100%;
 
-    a {
-      color: @link-color;
-    }
+    header {
+      height: 5%;
 
-    h1,
-    h2,
-    h3,
-    p {
-      color: @font-color;
-    }
+      nav {
+        // border: 1px solid brown;
+        padding: 15px 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
 
-    header nav {
-      // border: 1px solid brown;
-      padding: 5px;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+        a {
+          color: @link-color;
+        }
+      }
     }
 
     .name {
       text-align: center;
+      font-size: 4rem;
     }
 
     .main-content {
-      border: 1px solid black;
-      padding: 10px;
+      // border: 1px solid black;
+      padding: 15px;
+      height: 95%;
       display: flex;
       flex-flow: column wrap;
       justify-content: space-around;
+
+      h1,
+      h2,
+      h3,
+      p {
+        color: @font-color;
+      }
     }
   }
 }
